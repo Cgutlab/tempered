@@ -1,0 +1,94 @@
+header {
+    color: #004F73;
+    font-size: 19px;
+    font-weight: normal;
+    background: #FFFFFF;
+    z-index: 111;
+    top: 0;
+    left: 0;
+    letter-spacing: .5px;
+    max-height: 128px;
+}
+header nav {
+    background-color: inherit !important;
+}
+header .private {
+    color: #FFFFFF !important;
+    background-color: #54B7CE;
+    font-size: 15px;
+}
+header .private > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header button {
+    font-family:  inherit;
+    font-size: inherit;
+}
+header .private i,
+header .btn-link.buscar i {
+    margin-left: 1em;
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+header .btn-link,
+header .btn-link:hover {
+    text-decoration: none !important;
+}
+#ulNavFixed li + li {
+    margin-left: 1em;
+}
+header a:hover,
+#ulNavFixed .active {
+    position: relative;
+}
+#ulNavFixed a:hover:before,
+#ulNavFixed .active:before {
+    content: "";
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    border-bottom: 2px solid #004E74;
+    position: absolute;
+}
+#formLogueo .btn {
+    background-color: #54B7CE;
+    border-color: #54B7CE; 
+}
+#menuNav .modal-dialog {
+    margin: 0;
+}
+#menuNav .modal-dialog .modal-content {
+    border-radius: 0;
+}
+#menuNav .modal-footer {
+    align-items: initial;
+    justify-content: initial;
+}
+#menuNav .activeImportat,
+#menuNav .activeIdioma {
+    color: #D7BE89 !important;
+}
+#menuNav .idiomas li + li {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid rgb(68, 68, 71);
+}
+#menuNav .info:not(.modal-footer) i {
+    font-size: 24px;
+    color: #E0AE0E;
+}
+#menuNav .info form input {
+    border: none;
+    outline: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+#menuNav .info form i {
+    right: 10px;
+    top: calc(50% - 8px);
+}

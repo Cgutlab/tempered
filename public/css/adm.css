@@ -1,0 +1,143 @@
+body {
+    background-color: #eeeeee;
+}
+.app-body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    overflow-x: hidden;
+}
+
+#btnADD {
+    right: 20px;
+    bottom: 10px;
+    z-index: 11;
+    font-size: 25px;
+}
+#btnReload {
+    right: 20px;
+    top: 80px;
+    z-index: 11;
+    font-size: 25px;
+}
+.target > .row > div:nth-child(2n + 1) {
+    background-color: #fcfcfc;
+}
+.target > .row {
+    overflow-y: scroll;
+    white-space: nowrap;
+    max-height: 376px;
+}
+.target > .row > .col-12 {
+    float: none;
+}
+.bg-transparent {
+    background-color: transparent;
+}
+.target > .row > .col-12.d-none {
+    display: none !important;
+}
+.blue-background-class {
+    background-color: #C8EBFB !important;
+}
+
+/* ---------------------------------------------------
+    TABLE
+----------------------------------------------------- */
+.table-fixed {
+    width: 100%;
+}
+.table-fixed tbody {
+    height: 400px;
+    overflow-y: auto;
+    width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+    display: block;
+}
+.table-fixed thead tr th {
+    float: left;
+}
+/* ---------------------------------------------------
+    IMAGES / FILE
+----------------------------------------------------- */
+input.custom-file-input,
+input.custom-file-input + label {
+    cursor: pointer;
+}
+input.custom-file-input:invalid + label:before
+/*input.custom-file-input.invalid + label:before,*/ {
+    content: attr(data-invalid);
+}
+input.custom-file-input:valid + label:before
+/*input.custom-file-input.valid + label:before,*/ {
+    content: attr(data-valid);
+}
+input.custom-file-input:valid + label
+/*input.custom-file-input.valid + label,*/ {
+    border-color: #1e7e34;
+    background-color: #218838;
+    color: #ffffff;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+form[method="POST"] .btn.btn-success:before {
+    content: "guardar";
+    margin-right: 10px;
+}
+form[method="PUT"] .btn.btn-success:before {
+    content: "editar";
+    margin-right: 10px;
+}
+/* ---------------------------------------------------
+    TABLE
+----------------------------------------------------- */
+table td,
+table th {
+    vertical-align: middle !important;
+}
+table td p:last-child {
+    margin-bottom: 0;
+}
+/* ---------------------------------------------------
+    ROW
+----------------------------------------------------- */
+.row + .row {
+    margin-top: 1em;
+}
+
+/* ---------------------------------------------------
+    FIELDSET
+----------------------------------------------------- */
+fieldset {
+    border: none;
+    padding: 0;
+}
+fieldset + * {
+    margin-top: 1em;
+}
+fieldset legend {
+    width: auto;
+    padding: .375rem .75rem;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    color: #484848;
+    line-height: initial;
+    text-transform: uppercase;
+    background-color: #f8f8f8;
+    font-size: 17px;
+}
+fieldset legend.legend-btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+fieldset > p:last-child {
+    margin-bottom: 0;
+}

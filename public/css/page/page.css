@@ -1,0 +1,208 @@
+body {
+    background-color: #ffffff;
+}
+.wrapper-familia,
+.wrapper-descarga,
+.wrapper-categoria,
+.wrapper-presupuesto {
+    margin-top: 128px;
+}
+.wrapper-familia > .container {
+    width: 70% !important;
+}
+
+
+.wrapper-presupuesto .form-control {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-size: 17px;
+}
+.wrapper-presupuesto .img-1.inactivo,
+.wrapper-presupuesto .img-2.inactivo {
+    background-position: bottom center;
+}
+.wrapper-presupuesto .img-1,
+.wrapper-presupuesto .img-2 {
+    display: block;
+    margin: auto;
+}
+.wrapper-presupuesto .img-1 {
+    background-image: url(../../images/general/presupuestoA.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 145px;
+    width: 90px;
+}
+.wrapper-presupuesto .img-2 {
+    background-image: url(../../images/general/presupuestoB.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 145px;
+    width: 90px;
+}
+.wrapper-presupuesto .linea {
+    border-top:1px solid #DDDDDD;
+    display: inline-block;
+    margin-bottom: 4em;
+}
+.wrapper-presupuesto .btn.btn-primary {
+    background-color: #54B7CE !important;
+    border-color: #54B7CE;
+}
+.wrapper-presupuesto .btn.btn-outline-primary:hover {
+    background-color: #54B7CE !important;
+}
+/* ---------------------------------------------------
+    CONTACTO
+----------------------------------------------------- */
+.wrapper-contacto {
+    color: #495057;
+    font-size: 15px;
+    font-weight: normal;
+}
+.wrapper-contacto .mapa iframe {
+    width: 100% !important;
+    height: 500px;
+}
+.wrapper-contacto .info {
+    font-size: 17px;
+    font-weight: normal;
+    color: #595959;
+}
+.wrapper-contacto .info h5.title {
+    font-size: 17px;
+    font-weight: 600;
+}
+.wrapper-contacto .info h3.title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #C01335;
+}
+.wrapper-contacto .info .info i {
+    color: #4FB7CF;
+    font-size: 25px;
+}
+.wrapper-contacto .info a[href*="mailto:"] {
+    color: #4FB7CF;
+}
+.wrapper-contacto .overflow-x {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.wrapper-contacto .btn.btn-primary {
+    background-color: #54B7CE;
+    border-color: #54B7CE;
+}
+.wrapper-contacto .btn.btn-primary:active {
+    background-color: #54B7CE;
+}
+.wrapper-contacto .form-control {
+    border-left: none;
+    border-radius: 0;
+    border-right: none;
+    border-top: none;
+}
+.wrapper-contacto .form-control:focus {
+    box-shadow: none;
+}
+
+.wrapper-categoria .menu {
+    color: #54B7CE;
+    font-size: 19px;
+}
+.wrapper-categoria .menu ul {
+    font-size: 15px;
+}
+.wrapper-categoria .menu [aria-expanded="true"],
+.wrapper-categoria .menu [aria-expanded="true"] + ul.show {
+    color: #004F73;
+    -webkit-transition: all 700ms ease;
+    -moz-transition: all 700ms ease;
+    -ms-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
+.wrapper-categoria .menu [aria-expanded="true"] > i {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: all 700ms ease;
+    -moz-transition: all 700ms ease;
+    -ms-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
+.wrapper-categoria .menu .menu-categoria .active {
+    font-weight: bold;
+}
+
+.wrapper-producto .title {
+    color: #00528C;
+    font-size: 32px;
+}
+.wrapper-producto .code {
+    color: #54B7CE;
+    font-size: 23px;
+}
+.wrapper-producto .code::before {
+    content: "Código ";
+}
+.wrapper-producto .btn {
+    color: #004F73 !important;
+    border-color: #004F73;
+    -webkit-transition: all 700ms ease;
+    -moz-transition: all 700ms ease;
+    -ms-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
+.wrapper-producto .btn:hover {
+    background-color: #004F73;
+    color: #ffffff !important;
+    -webkit-transition: all 700ms ease;
+    -moz-transition: all 700ms ease;
+    -ms-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
+/* ---------------------------------------------------
+    MEDIA
+----------------------------------------------------- */
+.show-tablet {
+    display: none !important;
+}
+@media (max-width: 768px) {
+    .wrapper-empresa .texto {
+        column-count: 1;
+    }
+    .col-12 + .col-12 {
+        margin-top: 2em;
+    }
+    .carousel .texto {
+        width: 100%;
+    }
+    .coberturas {
+        font-size: 27px;
+    }
+    .form-tipo [data-tipo] {
+        justify-content: center;
+    }
+}
+@media (max-width: 991px) {
+    #contacto-container {
+        margin-top: 0;
+    }
+    .wrapper-contacto form .col-12 + .col-12 {
+        margin-top: 1em;
+    }
+    .hidden-tablet {
+        display: none !important;
+    }
+    .show-tablet {
+        display: block !important;
+    }
+}
